@@ -1,0 +1,150 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #273746;
+}
+
+.rightnav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.rightnav input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.rightnav button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #000080;
+    color: white;
+    cursor: pointer;
+}
+
+.rightnav button:hover {
+    background-color: #273746;
+}
+
+/* Main styles */
+main {
+    padding-top: 80px; /* Adjust for fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main p {
+    line-height: 1.8;
+}
+
+main address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .rightnav {
+        flex-direction: column;
+    }
+
+    .rightnav input, .rightnav button {
+        margin-bottom: 5px;
+    }
+}
